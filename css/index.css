@@ -1,0 +1,206 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #001f3f;
+    color: white;
+    background-image: url('../img/stars.jpg'); /* Asegúrate de tener una imagen de estrellas en esta ruta */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    animation: slideInDown 1s ease;
+}
+
+.div-logo img {
+    height: 100px;
+    border-radius: 50%;
+    animation: spin 20s linear infinite;
+}
+
+.div-nombre {
+    text-align: center;
+}
+
+.div-nombre h1, .div-nombre h2 {
+    margin: 0;
+    animation: fadeIn 2s ease;
+}
+
+.div-nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.div-nav ul li {
+    margin-left: 20px;
+}
+
+.div-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.div-nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 2s ease;
+}
+
+h2 {
+    color: #ffcc00;
+    margin-top: 20px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    animation: fadeInUp 2s ease;
+}
+
+.contenedor div {
+    margin: 0 20px;
+    transition: transform 0.3s ease;
+}
+
+.contenedor div:hover {
+    transform: scale(1.1);
+}
+
+.contenedor img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Courses Section Styles */
+.cursos {
+    margin: 40px;
+    animation: fadeIn 2s ease;
+}
+
+.cursos h3 {
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    animation: fadeInUp 2s ease;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+table th {
+    background-color: #001f3f;
+    color: #ffcc00;
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+table tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Estilos para el pie de página */
+footer {
+    background: #1a1a1a;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #00bcd4;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Animación para el pie de página */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
